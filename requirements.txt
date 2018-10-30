@@ -11,6 +11,7 @@ seaborn==0.9.0
 Cython==0.28.5
 folium==0.6.0
 mpu==0.15.1
+seaborn==0.9.0
 
 
 ##### Machine Learning packages

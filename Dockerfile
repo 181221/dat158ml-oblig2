@@ -88,9 +88,11 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
 # config & cleanup
 # ------------------------------------------------------------------
 
-    ldconfig && \
+RUN ldconfig && \
     apt-get clean && \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* ~/*
+
+RUN pip install --upgrade -r requirements.txt
 
 EXPOSE 8888 6006
