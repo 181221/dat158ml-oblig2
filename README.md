@@ -18,9 +18,9 @@ The datasets for the fastest routes from OSRM can be found [here](https://www.ka
 
 ### Docker
 
-docker build -f Dockerfile -t 181221/ml .
+Clone repository cd into it and run - docker build -f Dockerfile -t 181221/ml .
 
-docker run -d -p 8888:8888 --name jupyter -v "<Folder where the project is>":/root 181221/ml jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='root'
+docker run -d -p 8888:8888 --name jupyter -v "Folder where the project is":/root 181221/ml jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='root'
 
 ### Requirements
 
